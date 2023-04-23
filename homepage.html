@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/homedesign.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    <div class="container">
+        <div class="topbody">
+            <div class="telnumbody">
+                <div class="telnum">
+                    <div class="telclockbody">
+                        <div class="tel">
+                            <img src="/photo/phoneicon.png" alt="" class="telimg">
+                        </div>
+                        <div class="clock">
+                            <img src="/photo/clock.png" alt="" class="clockimg">
+                        </div>
+                    </div>
+                    <div class="numbody">
+                      <div class="num">
+                        <p class="num">03 02 66 81</p>
+                      </div>
+                      <div class="timebody">
+                        <p>:8:00 - 12:00</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="centerbody">
+                <div class="logobody">
+                  <img src="/photo/logo2.png" alt="" class="logo">
+                </div>
+                <div class="navbody">
+                    <div class="linksbody">
+                        <div class="linkbody">
+                            <a href="#" class="linkshape">Home</a>
+                        </div>
+                        <div class="linkbody">
+                            <a href="/menupage.html" class="linkshape">Menu</a>
+                        </div>
+                        <div class="linkbody">
+                            <a href="/about us page.html" class="linkshape">About us</a>
+                        </div>
+                        <div class="linkbody">
+                            <a href="/contactus page.html" class="linkshape">Contact</a>
+                        </div>
+
+                    </div>
+
+                </div>
+                    
+            </div>
+            <div class="rightbody">
+                <div class="pizzabody">
+                    <img src="/photo/pizza.png" alt="" class="pizzaimg">
+
+                </div>
+            </div>
+           <div class="Navbar">
+            <ul>
+                <li class="navbar-logo">FOOD PIZZA</li>
+                <li class="navbar-toggle"><img src="/photo/dropmenuimg.png" class="toggle"></li>
+            </ul>
+
+           </div>
+           <div id="menu-items">
+            <ul>
+                <li class="navbar-links active"><a href="/homepage.html">Home</a></li>
+                <li class="navbar-links active"><a href="/menupage.html">Menu</a></li>
+                <li class="navbar-links active"><a href="/about us page.html">About us</a></li>
+                <li class="navbar-links active"><a href="/contactus page.html">Contact us</a></li>  
+            </ul>
+           </div>
+        </div>
+        <div class="contentbody">
+            <div class="imgcontentbody">
+                <div class="imgcontent">
+                    <img src="/photo/pizzabody.png" alt="" class="imgcontents">
+                </div>
+            </div>
+            <div class="contenttextbody">
+                <div class="textbody">
+                    <div class="text1body">
+                    <p class="text1">Quality F<span class="spantext1">oo</span>ds</p>
+
+                    </div>
+                    <div class="text2body">
+                       <p class="text2">HEALTHY FOOD FOR <span class="spantext2">HEALTHY BODY</span></p>
+                    </div>
+                    <div class="viewmenubody">
+                       <a href="/menupage.html" class="viewmenu">VIEW MENU</a>
+
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+        <div class="footerbody">
+            <div class="footerfilter">
+                <div class="footercontentbody">
+
+                    <div class="qualdelorgcontent">
+                        <div class="imgsfooterbody">
+                            <img src="/photo/dish.png" alt="" class="imgsfooter">  
+                        </div>
+                        <div class="textimgsfooterbody">
+                            <p class="textimgsfooter">
+                                QUALITY FOODS   
+                            </p>
+                        </div>
+                       
+                    </div>
+                    <div class="qualdelorgcontent">
+                        <div class="imgsfooterbody">
+                            <img src="/photo/express-delivery.png" alt="" class="imgsfooter">
+                        </div>
+                        <div class="textimgsfooterbody">
+                            <p class="textimgsfooter">
+                                FASTEST DELIVERY  
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="qualdelorgcontent">
+                        <div class="imgsfooterbody">
+                            <img src="/photo/pizzafooter.png" alt="" class="imgsfooter">
+                        </div>
+                        <div class="textimgsfooterbody">
+                            <p class="textimgsfooter">
+                                ORGINAL RECIPES  
+                            </p>
+                        </div>
+                       
+                    </div>
+
+                </div>
+
+
+            </div>     
+        </div>
+    </div>
+
+    <script>
+       const toggleButton=document.getElementsByClassName('navbar-toggle')[0];
+    
+       toggleButton.addEventListener('click',function(){
+        var menuItems = document.getElementById('menu-items').style.display;
+        if(menuItems == "block")
+            document.getElementById('menu-items').style.display="none";
+        else
+            document.getElementById('menu-items').style.display="block";
+       });
+    </script>
+
+    
+</body>
+</html>

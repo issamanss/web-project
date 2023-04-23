@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 200vh;
+    width: 100%;
+    background-image: url(/photo/woodbackground.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.pizzabackgroundbody{
+    width: 30%;
+    height: 200vh;
+    background-image: url(/photo/menupizzabackground.png);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-size: contain;
+    background-attachment: fixed;
+}
+.menubody{
+    width: 50%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+}
+.menutitlebody{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.294);
+    border-bottom-left-radius:10px ;
+    border-bottom-right-radius:10px ;
+    padding-bottom: 25px;
+}
+.menutitle1{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 55px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-right: 110px;
+}
+.menutitle2{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.483);
+    font-size: 55px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-left: 200px;
+}
+.itemsbody{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+}
+.itemtile{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.itemcontent{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.title{
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+}
+.itemscontent{
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.661);
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.stickersbody{
+    height: 200vh;
+    width: 20%;
+    position: fixed;
+    right: 0;
+}
+.emptybody{
+    height: 25vh;
+    width: 100%;
+}
+.stickerbody{
+    height:40vh;
+    width: 100%;
+}
+.sticker1{
+    height: 100%;
+    width: 100%;
+    background-image: url(/photo/stickerpizza1-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px;
+}
+.sticker2{
+    height: 100%;
+    width: 100%;
+    background-image: url(/photo/stickerpizza2-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 240px;
+}
+.sticker3{
+    height: 100%;
+    width: 100%;
+    background-image: url(/photo/sticker_pizza3-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px;
+}
+.sticker4{
+    height: 100%;
+    width: 100%;
+    background-image: url(/photo/stickerpizza5-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px;
+}
+.drinksbody{
+    width: 100%;
+    height: 55vh;
+}
+.softhotbody{
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+.juiceshakebody{
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+.groups{
+    height: 100%;
+    width: 50%;
+}
+.titlegroups{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.contentgroup{
+    height: 85%;
+    width: 100%;
+}
+.titlegroup{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    border-bottom: 1px white solid;
+}
+li{
+    color: rgba(255, 255, 255, 0.611);
+    font-size: 20px;
+}
+.deliverybtnbody{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    
+    align-items: center;
+}
+.deliverybtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 170px;
+    width: 140px;
+    height: 40px;
+    background-color: burlywood;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.deliverylink{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+}
+.deliverybtn:hover{
+    background-color: rgba(255, 255, 255, 0.493);
+}
+@media screen and (min-width:900px) and (max-width:1200px){
+    .pizzabackgroundbody{
+        background-size: 300px;
+    }
+    .deliverybtn{
+       
+        margin-left: 120px;
+        width: 120px;
+        height: 38px;
+    }
+}
+@media screen and (min-width:700px) and (max-width:900px){
+    .deliverybtn{
+        margin-left: 100px;
+        width: 120px;
+        height: 38px;
+    }
+    .deliverylink{
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        font-weight: 800;
+    }
+    .menutitlebody{
+        width: 80%;
+        padding-bottom: 5px;
+    }
+    .menutitle1{
+        font-size: 40px;
+    }
+    .menutitle2{
+        font-size: 40px;
+        margin-left: 150px;
+    }
+    .title{
+        font-size: 23px;
+    }
+    .contentgroup{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .pizzabackgroundbody{
+        background-size: 250px;
+    }
+    .titlegroup{
+        font-size: 16px;
+    }
+}
+@media screen and (min-width:500px) and (max-width:700px){
+    .deliverybtn{
+        margin-left: 80px;
+        width: 90px;
+        height: 35px;
+    }
+    .deliverylink{
+        text-decoration: none;
+        font-size: 16px;
+    }
+    .menutitlebody{
+        width: 80%;
+        padding-bottom: 5px;
+    }
+    .menutitle1{
+        font-size: 30px;
+        margin-right: 80px;
+    }
+    .menutitle2{
+        font-size: 30px;
+        margin-left: 100px;
+    }
+    .title{
+        font-size: 19px;
+    }
+    .itemscontent{
+        font-size: 16px;
+    }
+    .contentgroup{
+        display: flex;
+       align-items: first baseline;
+        justify-content: center;
+    }
+    li{
+        font-size: 16px;
+    }
+    .pizzabackgroundbody{
+        background-size: 170px;
+    }
+    .titlegroup{
+        font-size: 13px;
+    }
+    .sticker4{
+      background-size: 120px;
+    }
+    .sticker1{
+        background-size: 140px;
+    }
+    .sticker2{
+        background-size: 183px;
+    }
+}
+@media screen and (min-width:300px) and (max-width:500px){
+    .deliverybtn{
+        margin-left: 40px;
+        width: 80px;
+        height: 30px;
+    }
+    .deliverylink{
+        text-decoration: none;
+        font-size: 13px;
+    }
+    .menubody{
+        width: 65%;
+    }
+    .menutitlebody{
+        width: 80%;
+        padding-bottom: 5px;
+        height: 5%;
+    }
+    .menutitle1{
+        font-size: 22px;
+        margin-right: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menutitle2{
+        font-size: 22px;
+        margin-left: 80px;
+    }
+    .title{
+        font-size: 16px;
+    }
+    .itemscontent{
+        font-size: 15px;
+        letter-spacing: 1px;
+       padding-left: 5px;
+    }
+    /*.itemcontent{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }*/
+    .contentgroup{
+        font-size: 10px;
+
+        display: flex;
+        justify-content: center;
+        align-items: first baseline;
+        padding: 10px;
+    }
+    li{
+        font-size: 15px;
+    }
+    .pizzabackgroundbody{
+        display: none;
+    }
+    .titlegroups{
+        display: flex;
+        justify-content: center;
+    }
+    .titlegroup{
+        font-size: 11px;
+        font-weight: 300;
+    }
+    .stickersbody{
+        width: 35%;
+    }
+    .sticker4{
+      background-size: 100px;
+    }
+    .sticker1{
+        background-size: 120px;
+    }
+    .sticker2{
+        background-size: 160px;
+    }
+}

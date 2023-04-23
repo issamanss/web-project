@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(139, 131, 131, 0.574);
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.titlebody{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    font-size: 33px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.propertiesbody{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.properties{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.property{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+.formtitlebody{
+    margin-top: 20px;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+}
+.titleform{
+    width: 50%;
+    height: 100%;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formbody{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.inputsbody{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nameemail{
+    width: 345px;
+    height: 50%;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: rgba(128, 128, 128, 0.384);
+    border: none;
+    outline: none;
+}
+textarea{
+    background-color: rgba(128, 128, 128, 0.384);
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 345px;
+    height: 100%;
+}
+.submitbody{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.submit{
+    width: 100px;
+    height: 50%;
+    background-color:  #4CAF50;
+    border: none;
+    border-radius: 5px;
+}
+@media screen and (min-width:320px) and (max-width:534px){
+    .titlebody{
+        justify-content: flex-start;
+    }
+    .title{
+        font-size: 30px;
+        padding-left: 20px;
+    }
+    .propertiesbody{
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+    .properties{
+        width: 100%;
+    }
+    .property{
+        justify-content: flex-start;
+        font-size: 15px;
+    }
+    .formtitlebody{
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+    .titleform{
+        width: 100%;
+        justify-content: flex-start;
+        font-size: 22px;
+    }
+    .formbody{
+        display: block;
+       width: 100%;
+    }
+    .inputsbody{
+        padding-left: 20px;
+    }
+
+
+
+
+
+
+
+}
