@@ -1,42 +1,78 @@
 *{
     padding:0;
     margin: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 body{
     width: 100%;
     height: 100vh;
     background-image: url(/photo/woodbackground.jpg);
-    background-size:220vh;
+    background-size:280vh;
    background-repeat: repeat; 
 }
 .container{
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contentbody{
+    width: 80%;
+    height: 80%;
+    background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
 }
 .titlebody{
+    height: 20%;
     width: 100%;
-    height: 10%;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 .title{
-    font-size: 25px;
-    color: white;
-    letter-spacing: 1px;
-    font-weight: bold;
-    border-bottom: 1px white solid;
-    margin-left: 10px;
+    font-size: 30px;
+    font-weight: 700;
 }
-.contentbody{
-    width: 50%;
-    height: 90%;
-    margin-left: 10px;
+.contentsbody{
+    width: 95%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
 }
 .content{
-    font-size: 18px;
-    color: rgba(255, 255, 255, 0.766);
-    font-weight: 400;
+    width: 95%;
+    height: 95%;
+    font-size: 20px;
+    font-weight: 600;
     letter-spacing: 1px;
+    word-spacing: 1px;
+}
+@media screen and (min-width:320px) and (max-width:710px){
+    .title{
+        font-size: 28px;
+    }
+    .content{
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        word-spacing: 0.25px;
+    }
+}
+@media screen and (min-width:320px) and (max-width:425px){
+    .title{
+        font-size: 28px;
+    }
+    .content{
+        font-size: 15px;
+        letter-spacing: 0.6px;
+        word-spacing: 1px;
+    }
+    .contentbody{
+        width: 90%;
+        height: 90%;
+       
+    }
 }

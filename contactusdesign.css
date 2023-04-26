@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+::placeholder{
+    font-size: 18px;
+    padding-left: 10px;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(43, 42, 42);
+   /* filter: brightness(40%);*/
+}
+.topbody{
+    width: 100%;
+    height: 20vh;
+}
+.toptitlebody{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.toptitle{
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    color: white;
+    padding-left: 10px;
+}
+.toptextbody{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.toptext{
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: white;
+    padding-left: 10px;
+}
+.contentbody{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+.formbody,.textbody{
+   width: 50%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+form{
+    width: 90%;
+    height: 90%;
+}
+.name,.email{
+    width: 95%;
+    height: 15%;
+    outline: none;
+    font-size: 18px;
+}
+textarea{
+    margin-top: 5px;
+    width: 95%;
+    height: 40%;
+    outline: none;
+    border-right: 2px white solid;
+    font-size: 18px;
+}
+.submit{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(246, 66, 66);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 700;
+    transition: 0.75s;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.submit:hover{
+    background-color:rgb(246, 43, 43) ;
+}
+.texts{
+    width: 90%;
+    height: 90%;
+}
+.propertiesbody{
+    height: 30%;
+    width: 100%;
+}
+.property{
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: 4px;
+}
+.logobody{
+    margin-top: 15px;
+    height: 15%;
+    width: 100%;
+    display: flex;
+}
+.logosbody{
+    width: 80px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+   
+}
+.logos{
+    width: 40px;
+    height: 40px;
+}
+@media screen and (min-width:430px) and (max-width:650px){
+    .contentbody{
+        flex-direction: column;
+    }
+    .formbody{
+        width: 100%;
+        height: 50%;
+    }
+    .submit{
+        margin-top: 5px;
+        width: 65px;
+        height: 30px;
+        font-size: 15px;
+    }
+    form{
+        width: 60%;
+        height: 100%;
+    }
+    .textbody{
+        height: 50%;
+    }
+    .toptitle{
+        font-size: 25px;
+        padding-left: 10px;
+    }
+    .toptext{
+        font-size: 15px;
+        letter-spacing: 0px;
+    }
+    .textbody{
+        width: 100%;
+    }
+    .property{
+        padding: 0;
+        margin-top: 2px;
+    }
+    .texts{
+        height: 100%;
+    }
+    .propertiesbody{
+        margin-top: 5px;
+        height: 60%;
+    }
+    .logobody{
+        height: 40%;
+        margin: 0;
+    }
+    .logosbody{
+        align-items: flex-start;
+        width: 25%;
+        justify-content: center;
+    }
+}
+@media screen and (min-width:320px) and (max-width:430px){
+    .contentbody{
+        flex-direction: column;
+    }
+    .formbody{
+        width: 100%;
+        height: 50%;
+    }
+    .submit{
+        margin-top: 5px;
+        width: 70px;
+        height: 25px;
+        font-size: 15px;
+    }
+    form{
+        width: 70%;
+        height: 100%;
+    }
+    .textbody{
+        height: 50%;
+    }
+    .toptitle{
+        font-size: 22px;
+        padding-left: 10px;
+    }
+    .toptext{
+        font-size: 12px;
+        letter-spacing: 0px;
+        font-weight: 900;
+    }
+    .textbody{
+        width: 100%;
+    }
+    .property{
+        padding: 0;
+        margin-top: 2px;
+        font-size: 15px;
+    }
+    .texts{
+        height: 100%;
+    }
+    .propertiesbody{
+        margin-top: 10px;
+        height: 50%;
+    }
+    .logobody{
+        height: 40%;
+        margin: 0;
+    }
+    .logosbody{
+        align-items: flex-start;
+        justify-content: center;
+        width: 25%;
+    }
+}
