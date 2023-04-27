@@ -9,7 +9,7 @@
 }
 .container{
     width: 100%;
-    height: 40rem;
+    height: 40.45rem;
     background-color: rgb(43, 42, 42);
    /* filter: brightness(40%);*/
 }
@@ -175,9 +175,9 @@ textarea{
     }
 }
 @media screen and (min-width:320px) and (max-width:430px){
-    .container{
-        height: 42rem;
-    }
+    /*.container{
+        height: 44rem;
+    }*/
     .contentbody{
         flex-direction: column;
     }
