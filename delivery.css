@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+   box-sizing: border-box;
   }
   body {
     font-family: Arial, sans-serif;
@@ -10,6 +10,27 @@
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
+  }
+  .backbtn{
+    width: 25px;
+    height: 25px;
+    position: fixed;
+    right: 20px;
+    top: 5px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.1s;
+  }
+  .backbtn p{
+    margin:0;
+  }
+  .backbtn:hover{
+    background-color: rgba(0, 0, 0, 0.194);
+    border-radius: 50%;
+    cursor: pointer;
   }
   .form-group {
     margin-bottom: 20px;
@@ -44,8 +65,7 @@
     opacity: 0.8;
   }
   @media screen and (max-width: 600px) {
-    .submit-btn,
-    .reset-btn {
+    .submit-btn, .reset-btn {
       width: 100%;
       margin-right: 0;
       margin-bottom: 10px;

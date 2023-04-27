@@ -8,6 +8,7 @@
 </head>
 <body>
   <div class="container">
+    <button onclick="goBack()" class="backbtn"><p>x</p></button>
     <form>
       <div class="form-group">
         <label for="name">Name:</label>
@@ -29,6 +30,10 @@
       <input type="reset" value="Reset" class="reset-btn">
     </form>
   </div>
-  
 </body>
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>
 </html>
