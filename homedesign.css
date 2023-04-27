@@ -15,7 +15,7 @@ body{
     height: 40rem;
 }
 .topbody{
-    height: 10rem;
+    height: 8.08rem;
     width: 100%;
     background-color: black;
     border-bottom: 1px rgba(255, 255, 255, 0.216) dashed;
@@ -136,7 +136,7 @@ body{
 }
 .contentbody{
     width: 100%;
-    height: 22.8rem;
+    height: 24.24rem;
     display: flex;
 }
 .imgcontentbody{
