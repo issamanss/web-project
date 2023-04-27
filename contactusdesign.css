@@ -175,6 +175,9 @@ textarea{
     }
 }
 @media screen and (min-width:320px) and (max-width:430px){
+    .container{
+        height: 42rem;
+    }
     .contentbody{
         flex-direction: column;
     }
