@@ -12,10 +12,10 @@ body{
 }
 .container{
     width: 100%;
-    height: 40rem;
+    height: 48rem;
 }
 .topbody{
-    height: 8.08rem;
+    height: 10rem;
     width: 100%;
     background-color: black;
     border-bottom: 1px rgba(255, 255, 255, 0.216) dashed;
@@ -136,7 +136,7 @@ body{
 }
 .contentbody{
     width: 100%;
-    height: 24.24rem;
+    height: 28rem;
     display: flex;
 }
 .imgcontentbody{
@@ -220,7 +220,7 @@ body{
 }
 .footerbody{
     width: 100%;
-    height: 8rem;
+    height: 10rem;
     background-image: url(/photo/footerbackground.jpg);
     border-top: 1px white solid;
 }
