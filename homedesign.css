@@ -147,12 +147,29 @@ body{
     align-items: center;
   
 }
-.imgcontents{
+/*.imgcontents{
     height: 280px;
     width: 280px;
     margin-left: 60px;
     transition: 0.5s;
-}
+}*/
+/**/
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+   }
+  .imgcontents{
+    display: none;
+    height: 220px;
+    width: 220px;
+    margin-left: 60px;
+  }
+  /*.mySlides {
+    display: none;
+    width: 280px;
+    height: 280px;
+  }*/
 .contenttextbody{
     width: 60%;
     height: 100%;

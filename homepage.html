@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="/homedesign.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="container">
@@ -77,11 +76,19 @@
            </div>
         </div>
         <div class="contentbody">
-            <div class="imgcontentbody">
+           <!-- <div class="imgcontentbody">
                 <div class="imgcontent">
                     <img src="/photo/pizzabody.png" alt="" class="imgcontents">
                 </div>
+            </div>-->
+            <div class="imgcontentbody">
+                <div class="slideshow-container">
+                    <img class="imgcontents" src="/photo/pizzabody.png">
+                    <img class="imgcontents" src="/photo/pizzahighquality2-removebg-preview.png">
+                    <img class="imgcontents" src="/photo/pizzahighquality3-removebg-preview.png">
+                  </div>
             </div>
+            
             <div class="contenttextbody">
                 <div class="textbody">
                     <div class="text1body">
@@ -154,6 +161,39 @@
         else
             document.getElementById('menu-items').style.display="block";
        });
+
+
+       // Set the time interval (in milliseconds) between each slide
+var slideInterval = 5000;
+
+// Get all the slide elements
+var slides = document.getElementsByClassName("imgcontents");
+
+// Set the index of the currently displayed slide
+var currentSlideIndex = 0;
+
+// Function to show the next slide
+function showNextSlide() {
+  // Hide the current slide
+  slides[currentSlideIndex].style.display = "none";
+
+  // Increment the slide index
+  currentSlideIndex++;
+
+  // Reset the slide index if it exceeds the number of slides
+  if (currentSlideIndex >= slides.length) {
+    currentSlideIndex = 0;
+  }
+
+  // Show the next slide
+  slides[currentSlideIndex].style.display = "block";
+
+  // Call the function again after the specified interval
+  setTimeout(showNextSlide, slideInterval);
+}
+
+// Start the slideshow
+showNextSlide();
     </script>
 
     
