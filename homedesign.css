@@ -541,6 +541,8 @@ body{
 }
 #menu-items{
     display: none;
+    margin-top: 41px;
+    z-index: 1;
 }
 #menu-items a{
     text-decoration: none;
@@ -554,10 +556,6 @@ body{
 #menu-items a:hover{
     color: rgba(255, 166, 0, 0.507);
     border-bottom: 0.5px rgba(255, 255, 255, 0.297) solid ;
-}
-#menu-items{
-    margin-top: 16px;
-    z-index: 1;
 }
 #menu-items li{
    height: 25px;
