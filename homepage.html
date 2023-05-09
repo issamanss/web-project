@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>HOME</title>
     <link rel="stylesheet" href="/homedesign.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -36,16 +36,16 @@
                 <div class="navbody">
                     <div class="linksbody">
                         <div class="linkbody">
-                            <a href="#" class="linkshape">Home</a>
+                            <a href="#" class="linkshape">HOME</a>
                         </div>
                         <div class="linkbody">
-                            <a href="/menupage.html" class="linkshape">Menu</a>
+                            <a href="/menupage.html" class="linkshape">MENU</a>
                         </div>
                         <div class="linkbody">
-                            <a href="/about us page.html" class="linkshape">About us</a>
+                            <a href="/about us page.html" class="linkshape">ABOUT</a>
                         </div>
                         <div class="linkbody">
-                            <a href="/contactus2.html" class="linkshape">Contact</a>
+                            <a href="/contactus2.html" class="linkshape">CONTACT</a>
                         </div>
 
                     </div>
@@ -68,10 +68,10 @@
            </div>
            <div id="menu-items">
             <ul>
-                <li class="navbar-links active"><a href="/homepage.html">Home</a></li>
-                <li class="navbar-links active"><a href="/menupage.html">Menu</a></li>
-                <li class="navbar-links active"><a href="/about us page.html">About us</a></li>
-                <li class="navbar-links active"><a href="/contactus2.html">Contact us</a></li>  
+                <li class="navbar-links active"><a href="/homepage.html">HOME</a></li>
+                <li class="navbar-links active"><a href="/menupage.html">MENU</a></li>
+                <li class="navbar-links active"><a href="/about us page.html">ABOUT US</a></li>
+                <li class="navbar-links active"><a href="/contactus2.html">CONTACT US</a></li>  
             </ul>
            </div>
         </div>
@@ -82,10 +82,8 @@
                 </div>
             </div>-->
             <div class="imgcontentbody">
-                <div class="slideshow-container">
-                    <img class="imgcontents" src="/photo/pizzabody.png">
-                    <img class="imgcontents" src="/photo/pizzahighquality2-removebg-preview.png">
-                    <img class="imgcontents" src="/photo/pizzahighquality3-removebg-preview.png">
+                <div class="image-container">
+                    <img id="swap-image" src="/photo/pizzabody.webp">
                   </div>
             </div>
             
@@ -146,14 +144,20 @@
 
                 </div>
 
-
             </div>     
         </div>
     </div>
+    <script>
+      window.onload = function() {
+  if (!sessionStorage.getItem('alertShown')) {
+    alert("WELCOME TO FOOD PIZZA");
+    sessionStorage.setItem('alertShown', true);
+  }
+};
+    </script>
 
     <script>
        const toggleButton=document.getElementsByClassName('navbar-toggle')[0];
-    
        toggleButton.addEventListener('click',function(){
         var menuItems = document.getElementById('menu-items').style.display;
         if(menuItems == "block")
@@ -162,38 +166,67 @@
             document.getElementById('menu-items').style.display="block";
        });
 
+       var images = [ "/photo/pizzabody.webp","/photo/pizzahighquality2-removebg-preview.webp","/photo/pizzahighquality3-removebg-preview.webp","/photo/img4-removebg-preview.png","/photo/img5-removebg-preview.png"];
 
-       // Set the time interval (in milliseconds) between each slide
-var slideInterval = 5000;
+  var currentImageIndex = 0;
+  var imgElement = document.getElementById("swap-image");
 
-// Get all the slide elements
-var slides = document.getElementsByClassName("imgcontents");
+  function swapImages() {
+    imgElement.src = images[currentImageIndex];
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+  }
+  setInterval(swapImages, 3500);
+      /* document.addEventListener("DOMContentLoaded", function() {
+  // Get all the slideshow images
+  var images = document.getElementsByClassName("imgcontents");
 
-// Set the index of the currently displayed slide
-var currentSlideIndex = 0;
+  // Initialize index to keep track of the current image
+  var index = 0;
 
-// Function to show the next slide
-function showNextSlide() {
-  // Hide the current slide
-  slides[currentSlideIndex].style.display = "none";
+  // Show the first image
+  images[index].style.display = "block";
 
-  // Increment the slide index
-  currentSlideIndex++;
+  // Function to display the next image with a fade effect
+  function showNextImage() {
+    // Get the current image and set its opacity to 0
+    var currentImage = images[index];
+    currentImage.style.opacity = 0;
 
-  // Reset the slide index if it exceeds the number of slides
-  if (currentSlideIndex >= slides.length) {
-    currentSlideIndex = 0;
+    // Hide the current image after a short delay
+    setTimeout(function() {
+      currentImage.style.display = "none";
+
+      // Increment the index
+      index++;
+
+      // Wrap around to the beginning if index exceeds the number of images
+      if (index >= images.length) {
+        index = 0;
+      }
+
+      // Get the next image and show it with a fade-in effect
+      var nextImage = images[index];
+      nextImage.style.display = "block";
+      fadeIn(nextImage);
+    },0); // Delay in milliseconds before hiding the current image
   }
 
-  // Show the next slide
-  slides[currentSlideIndex].style.display = "block";
+  // Function to fade in an image
+  function fadeIn(element) {
+    var opacity = 0;
+    var timer = setInterval(function() {
+      if (opacity >= 1) {
+        clearInterval(timer);
+      }
+      element.style.opacity = opacity;
+      opacity += 0.1;
+    }, 80); // Interval in milliseconds for fading effect
+  }
 
-  // Call the function again after the specified interval
-  setTimeout(showNextSlide, slideInterval);
-}
+  // Set the interval to switch images every 3 seconds (3000 milliseconds)
+  setInterval(showNextImage, 5000);
+});*/
 
-// Start the slideshow
-showNextSlide();
     </script>
 
     

@@ -7,8 +7,7 @@ body{
    background-image: url(/photo/dark-wood.jpeg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    
+    background-size: cover;  
 }
 .container{
     width: 100%;
@@ -113,7 +112,7 @@ body{
     transition: 0.75s;
 }
 .linkshape:hover{
-    color: rgba(255, 255, 255, 0.71);
+    color: rgb(255, 217, 0);
     border-bottom: 1px rgba(255, 255, 255, 0.71) solid;
 }
 .rightbody{
@@ -147,29 +146,11 @@ body{
     align-items: center;
   
 }
-/*.imgcontents{
-    height: 280px;
-    width: 280px;
-    margin-left: 60px;
-    transition: 0.5s;
-}*/
-/**/
-.slideshow-container {
-    max-width: 500px;
-    position: relative;
-    margin: auto;
-   }
-  .imgcontents{
-    display: none;
-    height: 220px;
-    width: 220px;
-    margin-left: 60px;
-  }
-  /*.mySlides {
-    display: none;
-    width: 280px;
-    height: 280px;
-  }*/
+#swap-image{
+    width: 200px;
+    height: 200px;
+}
+  
 .contenttextbody{
     width: 60%;
     height: 100%;
@@ -283,7 +264,7 @@ body{
     color: rgba(0, 0, 0, 0.712);
     letter-spacing: 1px;
 }
-@media screen and (min-width:501px) {
+@media screen and (min-width:601px) {
     .Navbar{
         display: none;
     }
@@ -457,74 +438,6 @@ body{
         display: flex;
     }
 }
-
-@media screen and  (min-width:500px) and (max-width:600px) {
-    .logo{
-        width: 38%;
-    }
-    .pizzaimg{
-        height: 48px;
-        width: 48px;
-    }
-    .telnum{
-        width: 100%;
-    }
-    .linkbody{
-        width:25%;
-    }
-    .linksbody{
-        width: 90%;
-    }
-    .linkshape{
-        font-size: 11px;
-        height: 25px;
-        transition: 0.75s;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .imgcontents{
-        margin: 0;
-        height: 180px;
-        width: 180px;
-     }
-     .text1{
-        color: white;
-        font-size: 30px;
-        font-weight: 800;
-        letter-spacing: 1px;
-    }
-    .text2{
-        color: orange;
-        font-size: 11px;
-        font-weight: bold;
-        letter-spacing: 1px;
-    }
-    .viewmenu{
-        width: 30%;
-        height: 50%;
-        font-weight:600;
-        font-size: 11px;
-        letter-spacing: 0px;
-        transition: 0.5s;
-    }
-    .textimgsfooter {
-        width: 70%;
-        font-size: 13px;
-        color: rgba(0, 0, 0, 0.712);
-        text-align: center;
-    }
-    .imgsfooter {
-        width: 45px;
-        height: 45px;
-    }
-    .footercontentbody {
-        height: 100%;
-        width: 80%;
-        display: flex;
-    }
-}
-
 .Navbar ul{
     display: flex;
     width: 100%;
@@ -580,7 +493,7 @@ body{
    backdrop-filter: blur(1.5px);
 -webkit-backdrop-filter: blur(1.5px);
 }
-@media screen and (min-width:300px) and (max-width:500px) { 
+@media screen and (min-width:300px) and (max-width:600px) { 
 .Navbar ul{
    padding-top: 5px;
 }
