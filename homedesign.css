@@ -493,7 +493,7 @@ body{
    backdrop-filter: blur(1.5px);
 -webkit-backdrop-filter: blur(1.5px);
 }
-@media screen and (min-width:300px) and (max-width:600px) { 
+@media screen and (min-width:320px) and (max-width:600px) { 
 .Navbar ul{
    padding-top: 5px;
 }
@@ -623,4 +623,12 @@ body{
         color: rgba(0, 0, 0, 0.845);
         text-align: center;
     }
+    @media screen and  (min-width:320px) and (max-width:420px) {
+        #swap-image{
+            height: 170px;
+            width: 170px;
+        }
+
+    }
+
 }

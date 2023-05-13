@@ -39,7 +39,7 @@
                             <a href="#" class="linkshape">HOME</a>
                         </div>
                         <div class="linkbody">
-                            <a href="/menupage.html" class="linkshape">MENU</a>
+                            <a href="/newmenu.html" class="linkshape">MENU</a>
                         </div>
                         <div class="linkbody">
                             <a href="/about us page.html" class="linkshape">ABOUT</a>
@@ -69,7 +69,7 @@
            <div id="menu-items">
             <ul>
                 <li class="navbar-links active"><a href="/homepage.html">HOME</a></li>
-                <li class="navbar-links active"><a href="/menupage.html">MENU</a></li>
+                <li class="navbar-links active"><a href="/newmenu.html">MENU</a></li>
                 <li class="navbar-links active"><a href="/about us page.html">ABOUT US</a></li>
                 <li class="navbar-links active"><a href="/contactus2.html">CONTACT US</a></li>  
             </ul>
@@ -83,7 +83,7 @@
             </div>-->
             <div class="imgcontentbody">
                 <div class="image-container">
-                    <img id="swap-image" src="/photo/pizzabody.webp">
+                    <img id="swap-image" src="/photo/FIRSTIMAGE.webp">
                   </div>
             </div>
             
@@ -166,7 +166,7 @@
             document.getElementById('menu-items').style.display="block";
        });
 
-       var images = [ "/photo/pizzabody.webp","/photo/pizzahighquality2-removebg-preview.webp","/photo/pizzahighquality3-removebg-preview.webp","/photo/img4-removebg-preview.png","/photo/img5-removebg-preview.png"];
+       var images = ["/photo/pizzahighquality2-removebg-preview.webp","/photo/pizzahighquality3-removebg-preview.webp","/photo/img4-removebg-preview.png","/photo/img5-removebg-preview.png"];
 
   var currentImageIndex = 0;
   var imgElement = document.getElementById("swap-image");
@@ -175,7 +175,7 @@
     imgElement.src = images[currentImageIndex];
     currentImageIndex = (currentImageIndex + 1) % images.length;
   }
-  setInterval(swapImages, 3500);
+  setInterval(swapImages, 3000);
       /* document.addEventListener("DOMContentLoaded", function() {
   // Get all the slideshow images
   var images = document.getElementsByClassName("imgcontents");
