@@ -210,10 +210,50 @@
 
             </div>
         </div><!--end of content-->
-
+        <div class="footerbody">
+           
+                <div class="footerimgbody">
+                    <img src="/photo/red-chili-pepper.png" alt="" class="img">
+                </div>
+                <div class="footerimgbody">
+                    <img src="/photo/tomato (1).png" alt="" class="img">
+                </div>
+                <div class="footerimgbody">
+                    <img src="/photo/basil.png" alt="" class="img">
+                </div>
+        </div>
+      
+        <div id="menu-items" style="display: none;">
+            <ul class="ullinks">
+                <li class="navbar-links"><a href="/homepage.html">HOME</a></li>
+                <li class="navbar-links"><a href="/newmenu.html">MENU</a></li>
+                <li class="navbar-links"><a href="/about us page.html">ABOUT US</a></li>
+                <li class="navbar-links"><a href="/contactus2.html">CONTACT US</a></li>  
+            </ul>
+           </div>
+          
+          <img src="/photo/dropmenuimg.png" onclick="showLinks()" id="toggle">
+          
+          
 
     </div><!--end of title container-->
     <script>
+           const menuItems = document.getElementById('menu-items');
+
+         function showLinks() {
+           
+               if(menuItems.style.display ==='none'){
+                menuItems.style.display = 'block';
+               }
+               else{
+                menuItems.style.display='none';
+
+               }
+                
+
+               
+            }
+
         // Get references to the divs
         const div1 = document.getElementById('menu1body');
         const div2 = document.getElementById('menu2body');

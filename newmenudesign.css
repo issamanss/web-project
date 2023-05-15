@@ -3,13 +3,75 @@
     padding: 0;
 }
 .container{
-    height: 45rem;
+    height: 50rem;
     width: 100%;
     background-image: url(/photo/woodbackground.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+
+
+
+#menu-items{
+    position: absolute;
+    height: 15rem;
+    width: 180px;
+    right: 10px;
+    top: 5.9rem;
+}
+.ullinks{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.372);
+    border-radius: 16px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(7px);
+  list-style: none;
+}   
+.navbar-links {
+    height: 25%;
+    display: flex;
+    align-items: center;
+}
+.navbar-links a{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.navbar-links a:hover{
+    color: goldenrod;
+    border-bottom: 1px solid goldenrod;
+
+}
+#toggle{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 4%;
+    top: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .titlesbody{
     width: 100%;
     height: 6rem;
@@ -232,6 +294,29 @@ li{
     width: 130px;
     height: 130px;
 }
+.footerbody{
+    display: none;
+    height: 6rem;
+    width: 100%;
+    display: flex;
+    display: none;
+}
+.footerimgbody{
+width: 33%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+@media screen and (min-width:320px) and (max-width:700px){
+    .footerbody{
+        display: flex;
+    }
+    .contentbody{
+        width: 90%;
+    }
+}
 @media screen and (min-width:700px) and (max-width:800px){
 .rowtitle{
     font-size: 25px;
@@ -249,15 +334,24 @@ li{
 .grouptitle{
     font-size: 18px;
 }
-
   }
   @media screen and (min-width:430px) and (max-width:700px){
-    #imgs1.imgsbody{
+    .titlebody{
+        width: 290px;
+    }
+    #titlestyle.title1{
+        width: auto;
+        margin-left: 150px;
+    }
+    #titlestyle.title2{
+        width: auto;
+        margin-left: 50px;
+    }
+    .imgsbody{
         display: none;
     }
-    .contentbody{
-        width: 75%;
-        margin-left: 5px;
+    .content{
+        justify-content: center;
     }
     .rowtitle{
         font-size: 20px;
@@ -266,8 +360,7 @@ li{
     .rowcontnet{
         font-size: 16px;
         letter-spacing: 0.2px;
-    }
-    
+    } 
     .img{
         width: 90px;
         height: 90px;
@@ -291,15 +384,13 @@ li{
     .price{
         font-size: 14px;
     }
-
 }
 @media screen and (min-width:320px) and (max-width:430px){
-    #imgs1.imgsbody{
+    .imgsbody{
         display: none;
     }
-    .contentbody{
-        width: 80%;
-        margin-left: 5px;
+    .content{
+        justify-content: center;
     }
     .rowtitle{
         font-size: 16px;
@@ -351,5 +442,5 @@ li{
     }
 
 }
-  
+
 
