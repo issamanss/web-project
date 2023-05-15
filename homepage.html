@@ -62,18 +62,17 @@
            <div class="Navbar">
             <ul>
                 <li class="navbar-logo">FOOD PIZZA</li>
-                <li class="navbar-toggle"><img src="/photo/dropmenuimg.png" class="toggle"></li>
             </ul>
 
            </div>
-           <div id="menu-items">
+          <!--<div id="menu-items">
             <ul>
                 <li class="navbar-links active"><a href="/homepage.html">HOME</a></li>
                 <li class="navbar-links active"><a href="/newmenu.html">MENU</a></li>
                 <li class="navbar-links active"><a href="/about us page.html">ABOUT US</a></li>
                 <li class="navbar-links active"><a href="/contactus2.html">CONTACT US</a></li>  
             </ul>
-           </div>
+           </div>--> 
         </div>
         <div class="contentbody">
            <!-- <div class="imgcontentbody">
@@ -146,8 +145,36 @@
 
             </div>     
         </div>
-    </div>
+
+        <div id="menus-items" style="display: none;">
+            <ul class="ullinks">
+                <li class="navbars-links"><a href="/homepage.html">HOME</a></li>
+                <li class="navbars-links"><a href="/newmenu.html">MENU</a></li>
+                <li class="navbars-links"><a href="/about us page.html">ABOUT US</a></li>
+                <li class="navbars-links"><a href="/contactus2.html">CONTACT US</a></li>  
+            </ul>
+        </div>  
+          
+          <img src="/photo/dropmenuimg.png" onclick="showLinks()" id="toggle">
+
+
+    </div><!--Container-->
     <script>
+
+           const menuItems = document.getElementById('menus-items');
+           const toggleImg = document.getElementById('toggle');
+
+         function showLinks() {
+               if(menuItems.style.display =='none'){
+                menuItems.style.display = 'block';
+                toggleImg.src='/photo/orange_x-removebg-preview.png';
+               }
+               else{
+                menuItems.style.display='none';
+                toggleImg.src='/photo/dropmenuimg.png';
+               }
+            }
+
       window.onload = function() {
   if (!sessionStorage.getItem('alertShown')) {
     alert("WELCOME TO FOOD PIZZA");
@@ -157,14 +184,23 @@
     </script>
 
     <script>
-       const toggleButton=document.getElementsByClassName('navbar-toggle')[0];
+
+
+
+
+
+
+
+
+
+     /*  const toggleButton=document.getElementsByClassName('navbar-toggle')[0];
        toggleButton.addEventListener('click',function(){
         var menuItems = document.getElementById('menu-items').style.display;
         if(menuItems == "block")
             document.getElementById('menu-items').style.display="none";
         else
             document.getElementById('menu-items').style.display="block";
-       });
+       });*/
 
        var images = ["/photo/pizzahighquality2-removebg-preview.webp","/photo/pizzahighquality3-removebg-preview.webp","/photo/img4-removebg-preview.png","/photo/img5-removebg-preview.png"];
 
@@ -176,56 +212,7 @@
     currentImageIndex = (currentImageIndex + 1) % images.length;
   }
   setInterval(swapImages, 3000);
-      /* document.addEventListener("DOMContentLoaded", function() {
-  // Get all the slideshow images
-  var images = document.getElementsByClassName("imgcontents");
-
-  // Initialize index to keep track of the current image
-  var index = 0;
-
-  // Show the first image
-  images[index].style.display = "block";
-
-  // Function to display the next image with a fade effect
-  function showNextImage() {
-    // Get the current image and set its opacity to 0
-    var currentImage = images[index];
-    currentImage.style.opacity = 0;
-
-    // Hide the current image after a short delay
-    setTimeout(function() {
-      currentImage.style.display = "none";
-
-      // Increment the index
-      index++;
-
-      // Wrap around to the beginning if index exceeds the number of images
-      if (index >= images.length) {
-        index = 0;
-      }
-
-      // Get the next image and show it with a fade-in effect
-      var nextImage = images[index];
-      nextImage.style.display = "block";
-      fadeIn(nextImage);
-    },0); // Delay in milliseconds before hiding the current image
-  }
-
-  // Function to fade in an image
-  function fadeIn(element) {
-    var opacity = 0;
-    var timer = setInterval(function() {
-      if (opacity >= 1) {
-        clearInterval(timer);
-      }
-      element.style.opacity = opacity;
-      opacity += 0.1;
-    }, 80); // Interval in milliseconds for fading effect
-  }
-
-  // Set the interval to switch images every 3 seconds (3000 milliseconds)
-  setInterval(showNextImage, 5000);
-});*/
+   
 
     </script>
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CONTACT US</title>
     <link rel="stylesheet" href="/contactusdesign.css">
 </head>
 <body>
@@ -12,8 +12,6 @@
         <div class="topbody">
             <div class="toptitlebody">
                 <p class="toptitle">CONTACT US !</p>
-               
-                    <button onclick="goBack()" class="backbtn"><p>x</p></button>
             </div>
             <div class="toptextbody">
                 <p class="toptext">we can't solve your problem if you don't tell us about it</p>
@@ -22,9 +20,9 @@
         <div class="contentbody">
             <div class="formbody">
                 <form action="">
-                    <input type="text" class="name" placeholder="Your Name"><br>
-                    <input type="email" class="email" placeholder="Email">
-                    <textarea name="" placeholder="Message"></textarea> 
+                    <input type="text" class="name" placeholder="Your Name" required><br>
+                    <input type="email" class="email" placeholder="Email" required>
+                    <textarea name="" placeholder="Message" required></textarea> 
                     <input type="submit" class="submit" value="Send">
                 </form>
             </div><!-- form body a -->
@@ -58,15 +56,35 @@
             </div>
         </div><!-- content body a -->
 
-
-
-        
+        <div id="menu-items" style="display: none;">
+            <ul class="ullinks">
+                <li class="navbar-links"><a href="/homepage.html">HOME</a></li>
+                <li class="navbar-links"><a href="/newmenu.html">MENU</a></li>
+                <li class="navbar-links"><a href="/about us page.html">ABOUT US</a></li>
+                <li class="navbar-links"><a href="/contactus2.html">CONTACT US</a></li>  
+            </ul>
+        </div>  
+          
+          <img src="/photo/dropmenuimg.png" onclick="showLinks()" id="toggle">
+   
     </div><!-- top container a -->
     
 </body>
 <script>
-    function goBack() {
-      window.history.back();
-    }
+    const menuItems = document.getElementById('menu-items');
+           const toggleImg = document.getElementById('toggle');
+
+         function showLinks() {
+           
+               if(menuItems.style.display =='none'){
+                menuItems.style.display = 'block';
+                toggleImg.src='/photo/orange_x-removebg-preview.png';
+               }
+               else{
+                menuItems.style.display='none';
+                toggleImg.src='/photo/dropmenuimg.png';
+               }
+    
+            }
   </script>
 </html>
