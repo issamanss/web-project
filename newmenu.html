@@ -234,21 +234,22 @@
           
           <img src="/photo/dropmenuimg.png" onclick="showLinks()" id="toggle">
           
-          
-
     </div><!--end of title container-->
     <script>
            const menuItems = document.getElementById('menu-items');
+           const toggleImg = document.getElementById('toggle');
 
          function showLinks() {
            
-               if(menuItems.style.display ==='none'){
+               if(menuItems.style.display =='none'){
                 menuItems.style.display = 'block';
+                toggleImg.src='/photo/orange_x-removebg-preview.png';
                }
                else{
                 menuItems.style.display='none';
-
+                toggleImg.src='/photo/dropmenuimg.png';
                }
+               
                 
 
                
