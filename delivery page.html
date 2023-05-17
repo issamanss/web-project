@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>ORDER</title>
   <link rel="stylesheet" href="/delivery.css">
 </head>
 <body>
@@ -12,28 +12,56 @@
     <form>
       <div class="form-group">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" class="input-field" required>
+        <input type="text" id="name" name="name" class="input-field">
       </div>
       <div class="form-group">
         <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" class="input-field" required>
+        <input type="tel" id="phone" name="phone" class="input-field">
       </div>
       <div class="form-group">
         <label for="location">Location:</label>
-        <input type="text" id="location" name="location" class="input-field" required>
+        <input type="text" id="location" name="location" class="input-field" >
       </div>
       <div class="form-group">
         <label for="order">Order:</label>
-        <textarea id="order" name="order" class="input-field" rows="5" required></textarea>
+        <textarea id="order" name="order" class="input-field"></textarea>
       </div>
-      <input type="submit" value="Submit" class="submit-btn">
+      <input type="submit" value="Submit" class="submit-btn" onclick=" placeOrder()">
       <input type="reset" value="Reset" class="reset-btn">
     </form>
   </div>
 </body>
 <script>
+
   function goBack() {
     window.history.back();
   }
+
+  function placeOrder() {
+      var name = document.getElementById('name').value;
+      var phoneNumber = document.getElementById('phone').value;
+      var location = document.getElementById('location').value;
+      var order = document.getElementById('order').value;
+      var counter=0;
+
+      // Validate inputs
+      if (name.trim() == '' || phoneNumber.trim() == '' || location.trim() == '' || order.trim() == '') {
+        alert('Please fill in all the required fields.');
+        counter++;
+      }
+     else{
+      var message = "Thank you, " + name + "! Your order of " + order + " will be delivered to " + location + " in 45 minutes.";
+      alert(message);
+     }
+     
+      if(counter == 0){
+      document.getElementById('name').value = '';
+      document.getElementById('phone').value = '';
+      document.getElementById('location').value = '';
+      document.getElementById('order').value = '';
+      }
+     
+    }
+
 </script>
 </html>

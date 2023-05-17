@@ -188,16 +188,16 @@ textarea{
     display: flex;
 }
 .logosbody{
-    width: 80px;
+    width: 40px;
     height: 100%;
     display: flex;
     align-items: center;
    
 }
-.logos{
-    width: 40px;
-    height: 40px;
+#icon{
+    color: gold;
 }
+
 @media screen and (min-width:430px) and (max-width:650px){
     .contentbody{
         flex-direction: column;
@@ -243,10 +243,11 @@ textarea{
     }
     .logobody{
         height: 40%;
+        width: 50%;
         margin: 0;
     }
     .logosbody{
-        align-items: flex-start;
+        align-items:normal;
         width: 25%;
         justify-content: center;
     }
@@ -313,6 +314,7 @@ textarea{
     }
     .logobody{
         height: 40%;
+        width: 60%;
         margin: 0;
     }
     .logosbody{
